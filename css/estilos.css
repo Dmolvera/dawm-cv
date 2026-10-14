@@ -19,15 +19,20 @@
     --ancho-maximo: 1000px;
 }
 
+
+* { box-sizing: border-box; }
+
+
 body {
     margin: 0;
-    background-color:var(--color-fondo);
+    background-color: var(--color-fondo);
     color: var(--color-texto);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
-header { background-color: var(--color-primario); color: rgb(0, 0, 0); padding: var(--espacio-grande); }
+
+header { background-color: var(--color-primario); color: white; padding: var(--espacio-grande); }
 nav    { margin-top: var(--espacio-medio); }
 main   { max-width: var(--ancho-maximo); margin: auto; padding: var(--espacio-grande); }
 
@@ -46,14 +51,15 @@ footer {
     text-align: center;
 }
 
+
 h1 { margin: 0; font-size: 2.4rem; }
-h2 { margin-top: 0; color: var(--color-primario); border-bottom: 2px solid #d9e0e6; padding-bottom: var(--espacio-pequeno); }
-h3 { margin-bottom: var(--espacio-pequeno); color:var(--color-secundario); }
+h2 { margin-top: 0; color: var(--color-primario); border-bottom: 2px solid var(--color-borde); padding-bottom: var(--espacio-pequeno); }
+h3 { margin-bottom: var(--espacio-pequeno); color: var(--color-secundario); }
 p  { margin-top: var(--espacio-pequeno); }
 ul { padding-left: 24px; }
 li { margin-bottom: 6px; }
 a  { color: var(--color-acento); text-decoration: none; }
-* { box-sizing: border-box; }
+
 
 figure { margin: var(--espacio-grande) 0; }
 
@@ -76,6 +82,7 @@ figcaption {
     font-size: 0.9rem;
 }
 
+
 .cabecera { text-align: center; }
 
 .cargo {
@@ -83,6 +90,7 @@ figcaption {
     color: #dce6ef;
     font-size: 1.1rem;
 }
+
 
 .item {
     padding: var(--espacio-medio);
@@ -101,15 +109,18 @@ figcaption {
     padding: 0;
 }
 
+
 #perfil      { border-top: 4px solid var(--color-acento); }
 #experiencia { border-top: 4px solid var(--color-secundario); }
-#educacion   { border-top: 4px solid #4f6d8a; }
+#educacion   { border-top: 4px solid var(--color-secundario); }
 #habilidades { border-top: 4px solid var(--color-acento); }
 #proyectos   { border-top: 4px solid var(--color-secundario); }
 #contacto    { border-top: 4px solid var(--color-acento); }
 
+
 form        { max-width: 650px; }
 .formulario { margin: auto; }
+
 
 label {
     display: block;
@@ -156,7 +167,9 @@ button {
     cursor: pointer;
 }
 
+
 .casilla { font-weight: normal; }
+
 
 nav ul {
     display: flex;
@@ -173,6 +186,7 @@ nav a {
     text-decoration: none;
     padding: var(--espacio-pequeno);
 }
+
 
 nav a:hover {
     color: var(--color-acento);
@@ -194,3 +208,4 @@ textarea:focus {
     outline: none;
     border-color: var(--color-acento);
     box-shadow: 0 0 0 3px rgba(47, 128, 163, 0.25);
+}
